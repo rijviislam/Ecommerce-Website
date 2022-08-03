@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ecommerce Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rufina:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER AND LANDING SECTION   -->
+    <section class="section__header section">
+        <div class="hero__container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./RedStore_Img/images/logo.png" alt="">
+                </div>
+                <nav id="MenuItem">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="cart__logo">
+                    <img src="./RedStore_Img/images/cart.png" alt="">
+                    <img src="./RedStore_Img/images/menu.png" class="menu__icon" onclick="menutoggle()">
+                </div>
+            </div>
+            <div class="row">
+                <div class="landing__col">
+                    <h1>Give Your Workout <br> A New Style</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat animi <br> in modi voluptate
+                        nisi
+                        ipsum facere laboriosam ducimus sit sapiente?</p>
+                    <a href="" class="button">Explore Now &#8594;</a>
+                </div>
+                <div class="landing__col">
+                    <img src="./RedStore_Img/images/image1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURED AND CATEGROIES  -->
+    <section class="section__categories section">
+        <div class="small__container">
+            <div class="row">
+                <div class="categories__col">
+                    <img src="./RedStore_Img/images/category-1.jpg" alt="">
+                </div>
+                <div class="categories__col">
+                    <img src="./RedStore_Img/images/category-2.jpg" alt="">
+                </div>
+                <div class="categories__col">
+                    <img src="./RedStore_Img/images/category-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURED AND PRODUCT  -->
+    <section class="section__featured">
+        <div class="small__container">
+            <div class="categories__title">
+                <h2> Featured Product</h2>
+            </div>
+            <div class="row">
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-1.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-2.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-3.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-4.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+            <div class="categories__title">
+                <h2> Letest Product</h2>
+            </div>
+            <div class="row">
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-5.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-6.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-7.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-8.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-9.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-10.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-11.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="product__col">
+                    <img src="./RedStore_Img/images/product-12.jpg" alt="">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OFFER    -->
+    <section class="section__offer">
+        <div class="exculisisve__container">
+            <div class="exculisive__row">
+                <div class="exculisive__col">
+                    <div class="exculisive__img">
+                        <img src="./RedStore_Img/images/exclusive.png" alt="">
+                    </div>
+                </div>
+                <div class="exculisive__col">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h1>Smartr Band</h1>
+                    <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, fugit quia? Consectetur
+                        beatae praesentium, </small>
+                    <a href="" class="button">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONIAL   -->
+    <section class="section__testimonial">
+        <div class="testimonial">
+            <div class="small__container">
+                <div class="row">
+                    <div class="testminial__col">
+                        <i class='bx bxs-quote-left'></i>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut blanditiis laborum unde.
+                            Soluta, ex ea.</p>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <img src="./RedStore_Img/images/user-1.png" alt="">
+                        <h3>Sea Padding</h3>
+
+                    </div>
+                    <div class="testminial__col">
+                        <i class='bx bxs-quote-left'></i>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut blanditiis laborum unde.
+                            Soluta, ex ea.</p>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <img src="./RedStore_Img/images/user-2.png" alt="">
+                        <h3>Sea Padding</h3>
+
+                    </div>
+                    <div class="testminial__col">
+                        <i class='bx bxs-quote-left'></i>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut blanditiis laborum unde.
+                            Soluta, ex ea.</p>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <img src="./RedStore_Img/images/user-3.png" alt="">
+                        <h3>Sea Padding</h3>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BRANDS    -->
+    <section class="section__brands section">
+        <div class="brands">
+            <div class="small__container">
+                <div class="row">
+                    <div class="brand__col">
+                        <img src="./RedStore_Img/images/logo-godrej.png" alt="">
+                    </div>
+                    <div class="brand__col">
+                        <img src="./RedStore_Img/images/logo-oppo.png" alt="">
+                    </div>
+                    <div class="brand__col">
+                        <img src="./RedStore_Img/images/logo-coca-cola.png" alt="">
+                    </div>
+                    <div class="brand__col">
+                        <img src="./RedStore_Img/images/logo-paypal.png" alt="">
+                    </div>
+                    <div class="brand__col">
+                        <img src="./RedStore_Img/images/logo-philips.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER    -->
+    <section class="section___footer">
+        <div class="footer">
+            <div class="footer__container">
+                <div class="row">
+                    <div class="footer__col">
+                        <h3>Download Our App</h3>
+                        <p>Download dolor sit amet consectetur adipisicing elit. Earum, nihil!</p>
+                        <div class="app__logo">
+                            <img src="./RedStore_Img/images/play-store.png" alt="">
+                            <img src="./RedStore_Img/images/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__img">
+                            <img src="./RedStore_Img/images/logo-white.png" alt="">
+                        </div>
+                        <p>Download dolor sit amet consectetur adipisicing elit. Earum, nihil!</p>
+                    </div>
+                    <div class="footer__col">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Resturn policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright">Copyright 2022-Rijvi Islam</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS FOR TOGGLE MENU    -->
+    <script>
+        var MenuItem = document.getElementById("MenuItem");
+
+        MenuItem.style.maxHeight = "0px"
+
+        function menutoggle() {
+            if (MenuItem.style.maxHeight == "0px") {
+                MenuItem.style.maxHeight == "200px";
+            }
+            else {
+                MenuItem.style.maxHeight == "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
