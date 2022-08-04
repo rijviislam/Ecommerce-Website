@@ -26,9 +26,10 @@ body {
 }
 
 .hero__container {
-    width: 1300px;
+    /* width: 1300px; */
     margin: auto;
     padding: 0 5rem;
+
 }
 
 .navbar {
@@ -65,10 +66,9 @@ nav ul li a {
 }
 
 .cart__logo {
+    margin-top: 1.2rem;
     width: 30px;
     height: 30px;
-    display: flex;
-    align-items: center;
 }
 
 .cart__logo img {
@@ -78,7 +78,7 @@ nav ul li a {
 
 .menu__icon {
     width: 28px;
-    margin-left: 1rem;
+    margin-left: 1.2rem;
     display: none;
 }
 
@@ -367,32 +367,38 @@ nav ul li a {
 }
 
 /* MEDIA QUERY  */
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 800px) {
     nav ul {
         position: absolute;
         top: 70px;
         left: 0;
         background: #333;
         width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
     }
 
     nav ul li {
         display: block;
-        margin-top: 10px;
         margin-right: 50px;
+        margin-top: 10px;
         margin-bottom: 10px;
-        overflow: hidden;
-        transition: max-height 0.5s;
     }
 
     nav ul li a {
         color: #FFF;
     }
+
+    .menu__icon {
+        display: block;
+        cursor: pointer;
+    }
 }
 
 /* MEDIA QUERY LESS THEN 600 SCREEN SIE  */
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
 
     .row {
         text-align: center;
